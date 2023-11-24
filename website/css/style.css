@@ -1,0 +1,1065 @@
+/* Abraham Khan - 1906636 --> */
+
+/* Sets the position of all paragraphs to relative by default */
+p{
+	position:relative;
+}
+
+/* Sets the universal font */
+*{
+	font-family:"Nova Square";
+}
+
+/*NAVBAR*/
+
+/* sets a gradient background */
+body, html{
+	background: radial-gradient(#bdbdbd,#666666);
+	height:100%;
+}
+
+/* aligns the navbar at the top of the screen */
+.top-nav{
+	background-color:#0d0d0d;
+    list-style:none;
+    text-align:center;
+    font-size:110%;
+	position: fixed; /* keeps the nav bar from moving */
+	margin-left:-40px;
+	top:0px;
+	margin-top:-1px;
+	width:100%;
+	z-index:100;
+}
+
+#nav-basket li {
+	display: inline;
+}
+
+/* sets the position of the basket image */
+#nav-basket img{
+	display:inline-block;
+	width: 80px;
+    height: 50px;
+	margin-top:4px;
+	overflow:hidden;
+	background-color: #0d0d0d;
+	float:right;
+}
+
+/* sets the position of the navbar logo */
+#nav-logo{
+	width: 46px;
+    height: 46px;
+	margin-top:7px;
+	margin-left:3px;
+    overflow: hidden;
+	background-color: #0d0d0d;
+	float:left;
+}
+
+.top-nav li{
+    display:inline;
+}
+
+/* sets the position of the central navbar elements */
+#nav-center a{
+	text-decoration: none;
+    display:inline-block;
+    padding:20px;
+    color:white;
+    box-shadow: inset 0 0 55px 15px #0d0d0d;
+}
+
+/* sets the position of the right-sided navbar elements */
+#nav-right a{
+	text-decoration: none;
+	display:inline-block;
+	padding:20px;
+    color:white;
+	float:right;
+    box-shadow: inset 0 0 55px 15px #0d0d0d;
+}
+
+/* adds a light box-shadow to the navbar buttons when a cursor hovers over them */
+#nav-right a:hover, #nav-center a:hover, #nav-basket img:hover{
+	box-shadow: inset 0 0 50px 15px #292929;
+}
+
+
+/*HOME*/
+
+/* positions the logo image, puts opacity at half and adds a 0.5 second smooth transition */
+#home-front-logo{
+	position: absolute;
+	top:59px;
+	width:100%;
+	left:0;
+	opacity:0.5;
+	transition: .5s ease;
+}
+
+/* positions the live concert image, puts opacity at half and adds a 0.5 second smooth transition */
+#home-live-img{
+	position: absolute;
+	top:59px;
+	width:100%;
+	left:0;
+	opacity:0.5;
+	z-index:1;
+	transition: .5s ease;
+	
+}
+
+/* sets the live concert image to go to full opacity when the user hovers over it */
+#home-live-img:hover{
+	opacity:1;
+	transition: .5s ease;
+	
+}
+
+
+
+#image-about{
+	text-align:center;
+}
+
+/* This positions the about and event elements that overlap the home images */
+#image-about a{
+	position:relative;
+	text-decoration: none;
+    display:inline-block;
+    padding:15px;
+	width:70px;
+	top:350px;
+    color:white;
+    background-color: black;
+	z-index:50;
+	opacity:0.85;
+	transition: 0.5s ease;
+}
+
+/* increases the button's opacity when the user hovers over it */
+#image-about a:hover{
+	opacity:1;
+}
+
+/* positions the header */
+#home-header{
+	z-index:50;
+	position:absolute;
+	padding:20px;
+	text-align:center;
+	color:white;
+	width:100%;
+	right:0;
+	background-color: #0d0d0d;
+	margin-top:380px;
+}
+
+/* positions the product cards and aligns them in a organised way */
+.home-item {
+	position:relative;
+	float: left;
+	width: 25%;
+	z-index:55;
+	top:435px;
+	background-color: #bdbdbd;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.home-item button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #0d0d0d;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+/* changes colour when hovering with cursors */
+.home-item button:hover{
+	box-shadow: inset 0 0 50px 15px #292929;
+}
+
+.go-store{
+	text-align:right;
+	z-index:10;
+}
+
+#shop-button{
+	text-decoration: none;
+	font-size:120%;
+	color:white;
+	padding:20px;
+	position:relative;
+	top:410px;
+}
+
+/* changes colour when hovering with cursors */
+#shop-button:hover{
+	box-shadow: inset 0 0 50px 15px #292929;
+}
+
+
+/*ABOUT PAGE*/
+
+.about-top {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index:2;
+}
+
+#about-photo{
+	height:400px;
+	object-fit:cover;
+}
+
+/* centers the text that is in front of the image */
+.about-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size:400%;
+	transform: translate(-50%, -50%);
+}
+
+#bot{
+	position:relative;
+	top:50px;
+	height:350px;
+	object-fit:contain;
+}
+
+#about-header{
+	position:relative;
+}
+
+#bot-t{
+	top:100px;
+}
+
+/* centers the music video */
+#about-video{
+	position:relative;
+	top:150px;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	display:block;
+	height:400px;
+}
+
+/*STORE PAGE*/
+
+.store-top {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index:2;
+}
+
+/* adds an underline */
+#filter{
+	text-decoration:underline;
+}
+
+/* crops the image without stretching */
+#store-photo{
+	object-fit:cover;
+	height:400px;
+	
+}
+
+.store-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size:400%;
+	transform: translate(-50%, -50%);
+}
+
+#search{
+	text-align:center;
+}
+
+#store-input {
+	width:650px;
+	height:40px;
+	font-size: 16px;
+	margin-top:50px;
+	border: 1px solid #ddd;
+}
+
+.store-item {
+	position:relative;
+	top:20px;
+	z-index:52;
+	float: right;
+	width: 22%;
+	background-color: #bdbdbd;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.store-item button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #0d0d0d;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+/* changes colour when hovering with cursors */
+.card button:hover{
+	box-shadow: inset 0 0 50px 15px #292929;
+}
+
+.store-side-nav {
+	position: fixed;
+	z-index: 1;
+	height:100%;
+	bottom: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden; /* removes vertical scrolling */
+	padding-top: 20px;
+}
+
+.store-side-nav a {
+	position:relative;
+	padding:10px;
+	text-decoration: none; /* removes decorations */
+	margin-top:5px;
+	top:400px;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+/* changes colour when hovering with cursors */
+.store-side-nav a:hover {
+	color: #f1f1f1;
+	background-color:grey;
+}
+
+
+/*ITEM DESCRIPTION*/
+.img-class{
+	position:absolute;
+}
+
+.img-class img{
+	position:relative;
+	height:30%;
+	width:30%;
+	background-color: #bdbdbd;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	bottom:20px;
+	left:50px;
+}
+
+.id-right{
+	position:absolute;
+	right:90px;
+}
+
+#img-right{
+	position:relative;
+	bottom:300px;
+	width:100%;
+	text-align:center;
+}
+#bytt{
+	position:relative;
+	left:120px;
+	height:50px;
+	width:125px;
+	color:white;
+	bottom:220px;
+	border:none;
+	background-color:red;
+}
+
+/* changes colour when hovering with cursors */
+#bytt:hover{
+	background-color:#9c0000;
+}
+
+.rating{
+	visibility:hidden;
+	position:relative;
+
+}
+
+#rating-text, #rating-star{
+	text-decoration:none;
+	margin-top:40px;
+	visibility:visible;
+	position:relative;
+	text-align:center;
+	z-index:99;
+}
+
+#rating-text{
+	position:relative;
+	top:20px;
+	right:50px;
+}
+
+/* changes colour when hovering with cursors */
+#rating-view:hover, #rating-star:hover{
+	color:red;
+}
+
+
+.aboveimg{
+	position:absolute;
+}
+
+#above-title{
+	font-size:20px;
+	left:15px;
+	top:20px;
+}
+
+/*BASKET*/
+.basket-all {
+  margin: 8px -16px;
+  box-sizing:border-box;
+}
+
+.basket-all, .basket-card {
+  padding: 50px;
+  padding-top:20px;
+  float:left;
+}
+
+.basket-text{
+	margin-top:90px;
+}
+.basket-text h3, p{
+	font-size:50px;
+	font-size:45px;
+}
+
+.basket-text button{
+	border: none;
+	padding: 12px;
+	color: white;
+	background-color: #db0000;
+	margin-top:52px;
+	text-align: center;
+	cursor: pointer;
+	width: 100px;
+	font-size: 18px;
+}
+
+.basket-card {
+	margin-left:-100px;
+	width: 75%;
+	text-align:center;
+}
+
+.basket-img {
+	width:40%;
+  float:left;
+  background-color: #bdbdbd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  
+}
+
+/* changes colour when hovering with cursors */
+.basket-text button:hover{
+	box-shadow: inset 0 0 50px 15px #292929;
+}
+
+.basket-side-nav {
+	position: fixed;
+	z-index: 1;
+	top:60px;
+	height:150px;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.basket-side-nav a {
+	position:relative;
+	padding: 16px;
+	text-decoration: none;
+	margin-top:5px;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+#checkout{
+	color:white;
+	background-color:blue;
+}
+
+/* changes colour when hovering with cursors */
+#checkout:hover {
+	color: #f1f1f1;
+	background-color:#f7a100;
+}
+
+
+/*LOGIN*/
+#login-e, #login-p {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	margin: 6px 0 25px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+#login-header{
+	text-align:center;
+}
+
+/* centering login box */
+.login-system{
+	position:absolute;
+	background-color:grey;
+    width:80%;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-b {
+	background-color: #2e2e2e;
+	color: white;
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+/* changes colour when hovering with cursors */
+.login-b:hover {
+	background-color:#212121;
+}
+
+.login-system a {
+	color: dodgerblue;
+}
+
+.register-link {
+	position:relative;
+	color:white;
+	top:450px;
+	text-align: center;
+}
+
+
+
+/*REGISTER*/
+
+#register-e, #register-p {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	margin: 6px 0 25px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+#register-header{
+	text-align:center;
+}
+
+
+
+.register-system{
+	position:absolute;
+	background-color:grey;
+    width:80%;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-b {
+	background-color: #2e2e2e;
+	color: white;
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+/* changes colour when hovering with cursors */
+.register-b:hover {
+	background-color:#212121;
+}
+
+.register-system a {
+	color: dodgerblue;
+}
+
+.login-link {
+	position:relative;
+	color:white;
+	top:450px;
+	text-align: center;
+}
+
+
+/*WRITE REVIEW*/
+#review-input {
+	width: 65%;
+	padding: 15px;
+	padding-bottom:200px;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+#review-back{
+	position:relative;
+	top:30px;
+}
+
+#review-header{
+	font-size:30px;
+	position:relative;
+	top:50px;
+}
+
+#review-rating{
+	font-size:30px;
+	position:relative;
+	top:70px;
+}
+
+#review-score{
+	position:relative;
+	top:40px;
+	width:60px;
+	font-size:30px;
+}
+
+.review-submit {
+	position:absolute;
+	background-color: #2e2e2e;
+	color: white;
+	padding: 20px;
+	border: none;
+	top:580px;
+	right:600px;
+	cursor: pointer;
+	width: 150px;
+}
+
+/* changes colour when hovering with cursors */
+.review-submit:hover {
+	background-color:#212121;
+}
+
+
+/*EVENTS*/
+.event-top {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index:2;
+}
+
+#event-photo{
+	height:400px;
+	object-fit:cover;
+}
+
+.event-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size:400%;
+	transform: translate(-50%, -50%);
+}
+
+.event a, .event1 a, .event2 a{
+	position:absolute;
+	float:right;
+	display:inline-block;
+	padding:20px;
+	background-color:#bdbdbd;
+	right:40px;
+	color:white;
+	text-decoration:none;
+	width:100px;
+	text-align:center;
+}
+
+.event a{
+	top:450px;
+}
+
+.event1 a{
+	top:600px;
+}
+
+.event2 a{
+	top:750px;
+}
+
+/* changes colour when hovering with cursors */
+.event a:hover, .event1 a:hover, .event2 a:hover{
+	background-color:#333333;
+}
+
+.event p, .event1 p, .event2 p{
+	position:absolute;
+	float:left;
+	left:40px;
+	color:white;
+	text-decoration:none;
+}
+
+#event-location{
+	left:150px;
+}
+
+.event p{
+	top:455px;
+}
+
+.event1 p{
+	top:605px;
+}
+
+.event2 p{
+	top:755px;
+}
+
+
+/*CONTACT*/
+.contact-text{
+	font-size:30px;
+}
+
+#contact-header{
+	position:relative;
+	top:100px;
+}
+
+#tel,#em{
+	position:relative;
+	top:200px;
+}
+
+#ff,#sm{
+	position:relative;
+	top:270px;
+}
+
+
+
+
+
+.socme{
+	position:relative;
+	top:300px;
+}
+
+.socme a{
+	font-size:25px;
+	color:white;
+	text-decoration:none;
+	padding:20px;
+	background-color:#bdbdbd;
+	display:inline-block;
+	margin-left:20px;
+}
+
+/* changes colour when hovering with cursors */
+.socme a:hover{
+	background-color:black;
+}
+
+
+/*////////////////////////////////////////////*/
+
+@media screen and (max-width: 1275px) {
+	.basket-text h3, p{
+		font-size:25px;
+	}
+	.basket-img{
+		width:50%;
+	}
+	
+	.basket-text button{
+		width:80px;
+	}
+
+/* Changes layout of page or size of elements once the screen width is small enough */
+@media screen and (max-width: 771px) {
+/*NAVBAR*/
+	
+#nav-center a{
+    float: none;
+    display: block;
+    margin-left:0px;
+    padding:10px;
+}
+  
+#nav-right a{
+	display: inline-block;
+	float:none;
+	width:20%;
+	padding:10px;
+}
+  
+.top-nav{
+  	background-color:#0d0d0d;
+}
+
+/*HOME*/
+#shop-button{
+	  font-size:100%;
+	  top:390px;
+}
+
+#home-header{
+	margin-top:360px;
+}
+
+#home-live-img, #home-front-logo{
+	top:250px;
+}
+
+.home-item {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+
+/*ABOUT*/
+
+#about-photo{
+	margin-top:250px;
+}
+
+.about-center {
+	top: 70%;
+}
+
+
+/*STORE*/
+
+.store-top{
+	margin-top:250px;
+}
+
+#store-photo{
+	height:200px;
+}
+
+.store-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.store-side-nav{
+	position:relative;
+	display:inline-block;
+	float:left;
+	top:0;
+	height:60px;
+	padding-bottom:50px;
+}
+
+.store-side-nav a{
+	top:10px;
+	display:inline-block;
+	padding:5px;
+}
+
+#search{
+	margin-top:50px;
+}
+
+#store-input{
+	width:80%;
+}
+
+
+/*ITEM DESCRIPTION*/
+#rating-text, #rating-star{
+	margin-top:250px;
+}
+
+#rating-text{
+	top:60px;
+}
+
+#rating-star{
+	top:40px;
+}
+
+.img-class img{
+	margin-top:30px;
+	left:0;
+}
+
+#img-right{
+	font-size:10px;
+	bottom:140px;
+}
+
+#bytt{
+	bottom:120px;
+	height:40px;
+	width:80px;
+}
+
+#above-title{
+	top:0;
+}
+
+/*BASKET*/
+.basket-card {
+    width: 100%;
+	margin-top:200px;
+  }
+  .basket-text{
+	  margin-top:0;
+	  margin-right:50px;
+  }
+  .basket-text h3, p{
+		font-size:13px;
+	}
+	
+	.basket-text button{
+		font-size:13px;
+		width:70px;
+	}
+.basket-side-nav{
+	top:250px;
+	height:100px;
+}
+
+.basket-side-nav a{
+	font-size:15px;
+	padding:5px;
+}
+
+
+/*LOGIN*/
+.login-system{
+	top:450px;
+}
+
+.register-link{
+	top:650px;
+}
+
+
+/*REGISTER*/
+.register-system{
+	top:450px;
+}
+
+.login-link{
+	top:650px;
+}
+
+
+
+/*REVIEW*/
+#review-input{
+	width:95%;
+	margin-top:200px;
+}
+
+#review-header{
+	top:250px;
+}
+
+#review-rating{
+	top:270px;
+}
+
+#review-stars{
+	top:230px;
+}
+
+.review-submit{
+	top:780px;
+	right:150px;
+}
+
+
+/*EVENTS*/
+.event p{
+	top:605px;
+}
+
+.event1 p{
+	top:705px;
+}
+
+.event2 p{
+	top:805px;
+}
+
+.event a{
+	top:600px;
+	right:5px;
+}
+
+.event1 a{
+	top:700px;
+	right:5px;
+}
+
+.event2 a{
+	top:800px;
+	right:5px;
+}
+
+#event-photo{
+	margin-top:250px;
+	height:300px;
+}
+
+.event-center {
+  top: 70%;
+}
+
+
+/*CONTACT*/
+.socme{
+	top:400px;
+}
+
+#contact-header{
+	top:250px;
+}
+
+#tel,#em{
+	top:300px;
+}
+
+#ff,#sm{
+	top:370px;
+}
+}
